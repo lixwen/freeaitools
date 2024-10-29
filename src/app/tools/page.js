@@ -1,5 +1,3 @@
-import Header from "../components/Header";
-import Footer from "../components/Footer";
 import ModelCard from "../components/ModelCard";
 
 const Tools = () => {
@@ -29,7 +27,7 @@ const Tools = () => {
       <main>
         <h1>AI 工具</h1>
         {models.map((category) => (
-          <div key={category.title}>
+          <div className="modelContainer" key={category.title}>
             <h2>{category.title}</h2>
             {category.models.map((model) => (
               <ModelCard key={model} model={model} />
